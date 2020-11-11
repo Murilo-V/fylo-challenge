@@ -16,7 +16,7 @@ export const Container = styled.header `
     }
 
     header {
-        padding: 50px;
+        padding: 40px;
         color: #fff;
         display: flex;
         justify-content: space-between;

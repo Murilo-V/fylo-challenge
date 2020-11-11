@@ -33,7 +33,7 @@ export const Container = styled.div `
    justify-content: center;
    text-align: center;
    padding: 0 4px 0 4px;
-   background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-images/328150e51ca15c961fa181fea432c97d67c45f29/bg-curvy-desktop.svg');
+   background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-challenge/9b9df386f194fb02dee441c39e5c86c97a41fd15/src/assets/bg-curvy-desktop.svg');
    background-repeat: no-repeat;
    background-size: 100vw;
    background-position-y: bottom;
