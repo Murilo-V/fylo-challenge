@@ -16,6 +16,7 @@ export const Container = styled.header `
     }
 
     header {
+        background: hsl(217, 28%, 15%);
         padding: 40px;
         color: #fff;
         display: flex;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container } from './styles';
-import profileOne  from '../../assets/profile-1.jpg';
 
 const Comment = (props) => {
   return (
@@ -9,10 +8,10 @@ const Comment = (props) => {
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
         
         <div className="profile">
-          <img src={props.profileImage} />
+          <img src={props.profileImage} alt={props.profileName}/>
 
            <div>
-            <strong>{props.name}</strong>
+            <strong>{props.profileName}</strong>
             <small>Founder & CEO, Huddle</small>
           </div> 
         </div>

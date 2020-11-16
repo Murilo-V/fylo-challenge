@@ -1,5 +1,5 @@
 import React from 'react';
-import { IntroStyle, FeaturesStyle, Comments } from './styles';
+import { IntroStyle, FeaturesStyle, Comments, GetStartedDiv, GetStartedForm } from './styles';
 import IllustrationIntro from '../../assets/illustration-intro.png';
 import iconAccessAnywhere from '../../assets/icon-access-anywhere.svg';
 import iconSecurity from '../../assets/icon-security.svg';
@@ -8,24 +8,22 @@ import iconAnyFile from '../../assets/icon-any-file.svg';
 import IllustrationStayProductive from '../../assets/illustration-stay-productive.png';
 import { Link } from 'react-router-dom';
 import Comment from '../../components/Comment';
+import Button from '../../components/Button';
 
 const Landing = () => {
   return (
     <>
     <IntroStyle>
-        <div className="container-intro">
             <img src={IllustrationIntro} alt="IllustrationIntro" />
             
                 <h1>All your files in one secure location, acessible anywhere.</h1>
                 <p>Fylo stores all your most important files in one secure location. </p>
                 <p>Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
         
-                <button>Get Started</button>
-        </div>
+                <Button btnText="Get Started" />
     </IntroStyle>
 
     <FeaturesStyle>
-      <div className="container-features">
           <div className="access-security">
             <div>
               <img src={iconAccessAnywhere} alt="iconAccessAnywhere" />
@@ -62,25 +60,35 @@ const Landing = () => {
               <Link to={Landing}>See how Fylo works <div></div> </Link>
             </div>
           </div>
-      </div>
     </FeaturesStyle>
 
       <Comments>
-        <div className="comments">
           <Comment 
             profileImage="https://github.com/Murilo-V/fylo-challenge/blob/main/src/assets/profile-1.jpg?raw=true"
-            name="Satish Patel"
+            profileName="Satish Patel"
           />
           <Comment 
             profileImage="https://github.com/Murilo-V/fylo-challenge/blob/main/src/assets/profile-2.jpg?raw=true"
-            name="Bruce McKenzie"
+            profileName="Bruce McKenzie"
           />
           <Comment 
             profileImage="https://github.com/Murilo-V/fylo-challenge/blob/main/src/assets/profile-3.jpg?raw=true"
-            name="Iva Boyd"
+            profileName="Iva Boyd"
           />
-        </div>
       </Comments>
+
+
+      <GetStartedDiv>
+          <h4>Get early access today</h4>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      </GetStartedDiv>
+
+      <GetStartedForm>
+        <form>
+          <input type="email" placeholder="email@example.com"/>
+          <Button btnText="Get Started For Free" type="submit"/>
+        </form>
+      </GetStartedForm>
       
     </>
   );

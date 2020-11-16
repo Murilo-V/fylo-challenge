@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const IntroStyle = styled.div `
 @media (max-width: 600px) {
-    .container-intro {
         img {
                 width: 300px;
             }
@@ -22,21 +21,20 @@ export const IntroStyle = styled.div `
         button {
             margin-bottom: 20px !important;
         }
-    }
 }
 
-.container-intro {
+    background-color: hsl(217, 28%, 15%);
     color: #fff;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   padding: 0 4px 0 4px;
-   background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-challenge/9b9df386f194fb02dee441c39e5c86c97a41fd15/src/assets/bg-curvy-desktop.svg');
-   background-repeat: no-repeat;
-   background-size: 100vw;
-   background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4px 0 4px;
+    background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-challenge/9b9df386f194fb02dee441c39e5c86c97a41fd15/src/assets/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: bottom;
 
    img { 
         max-width: 600px;
@@ -65,30 +63,13 @@ export const IntroStyle = styled.div `
     }
 
     button {
-        padding: 12px;
-        cursor: pointer;
-        font-size: 12pt;
         margin-top: 40px;
         margin-bottom: 200px;
-        width: 230px;
-        border-radius: 20px;
-        border-style: none;
-        color: #fff;
-        font-weight: 700;
-        transition: 400ms;
-        transition-property: background-image;
-        background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
-
-        &:hover {
-            background-image: linear-gradient(to right,hsl(198, 60%, 50%) , hsl(176, 68%, 64%));
-        }
     }
-}   
 `;
 
 export const FeaturesStyle = styled.div`
 
-    .container-features {
         background-color: hsl(218, 28%, 13%);
 
         .access-security, .real-time-store {
@@ -163,11 +144,9 @@ export const FeaturesStyle = styled.div`
                 }
             }
         }
-    }
 `;
 
 export const Comments = styled.div`
-    .comments {
         padding-top: 120px;
         background-color: hsl(218, 28%, 13%);
         display: flex;
@@ -177,5 +156,49 @@ export const Comments = styled.div`
         background-repeat: no-repeat;
         background-position-x: 8vw;
         background-position-y: 15vh;
-    }
+`;
+
+export const GetStartedDiv = styled.div`
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 30px 50px 0 50px;
+        background: hsl(219, 30%, 18%);
+        width: 60%;
+        margin: 150px auto 0 auto;
+        text-align: center;
+
+        h4 {
+            font-size: 20pt;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 12pt;
+        }
+`;
+
+export const GetStartedForm = styled.div`
+            background: hsl(216, 53%, 9%);
+        
+        form {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: hsl(219, 30%, 18%);
+            width: 60%;
+            margin: 0 auto 0 auto;
+            padding: 30px 50px 30px 50px;
+        }
+
+        input {
+            border-radius: 20px;
+            padding: 12px;
+            width: 60%;
+            color: hsl(219, 30%, 18%);
+            font-weight: bold;
+        }
+
+        button {
+            width: 37%;
+            margin-left: 3%;
+        }
 `;
