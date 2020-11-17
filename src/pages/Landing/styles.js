@@ -166,6 +166,7 @@ export const GetStartedDiv = styled.div`
         width: 60%;
         margin: 150px auto 0 auto;
         text-align: center;
+        box-shadow: 0 12px 14px #080808;
 
         h4 {
             font-size: 20pt;
@@ -179,10 +180,11 @@ export const GetStartedDiv = styled.div`
 
 export const GetStartedForm = styled.div`
             background: hsl(216, 53%, 9%);
-        
+            z-index: 0;        
         form {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
+            box-shadow: 0 20px 20px #080808;
             background: hsl(219, 30%, 18%);
             width: 60%;
             margin: 0 auto 0 auto;

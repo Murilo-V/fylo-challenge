@@ -9,6 +9,7 @@ import IllustrationStayProductive from '../../assets/illustration-stay-productiv
 import { Link } from 'react-router-dom';
 import Comment from '../../components/Comment';
 import Button from '../../components/Button';
+import Footer from '../../components/Footer';
 
 const Landing = () => {
   return (
@@ -85,11 +86,12 @@ const Landing = () => {
 
       <GetStartedForm>
         <form>
-          <input type="email" placeholder="email@example.com"/>
+          <input type="email" placeholder="email@example.com" required/>
           <Button btnText="Get Started For Free" type="submit"/>
         </form>
       </GetStartedForm>
       
+      <Footer />
     </>
   );
 };
