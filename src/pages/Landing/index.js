@@ -1,15 +1,17 @@
 import React from 'react';
-import { IntroStyle, FeaturesStyle, Comments, GetStartedDiv, GetStartedForm } from './styles';
+import { IntroStyle, FeaturesStyle, Comments, GetStartedDiv } from './styles';
 import IllustrationIntro from '../../assets/illustration-intro.png';
 import iconAccessAnywhere from '../../assets/icon-access-anywhere.svg';
 import iconSecurity from '../../assets/icon-security.svg';
 import iconCollaboration from '../../assets/icon-collaboration.svg';
 import iconAnyFile from '../../assets/icon-any-file.svg';
+import iconArrow from '../../assets/icon-arrow.svg'
 import IllustrationStayProductive from '../../assets/illustration-stay-productive.png';
 import { Link } from 'react-router-dom';
 import Comment from '../../components/Comment';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
+import Form from '../../components/Form';
 
 const Landing = () => {
   return (
@@ -58,7 +60,7 @@ const Landing = () => {
               <h2>Stay productive, wherever you are</h2>
               <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
               <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-              <Link to={Landing}>See how Fylo works <div></div> </Link>
+              <Link to={Landing}>See how Fylo works <img src={iconArrow} alt="iconArrow"/> </Link>
             </div>
           </div>
     </FeaturesStyle>
@@ -84,12 +86,7 @@ const Landing = () => {
           <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
       </GetStartedDiv>
 
-      <GetStartedForm>
-        <form>
-          <input type="email" placeholder="email@example.com" required/>
-          <Button btnText="Get Started For Free" type="submit"/>
-        </form>
-      </GetStartedForm>
+      <Form />
       
       <Footer />
     </>

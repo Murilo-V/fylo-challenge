@@ -62,8 +62,12 @@ export const Container = styled.footer`
                     li {
                         list-style: none;
                         margin-bottom: 20px;
-                    cursor: pointer;
+                        cursor: pointer;
                         width: 90px;
+
+                        &:hover {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
@@ -81,6 +85,11 @@ export const Container = styled.footer`
                     border-radius: 40px;
                     padding: 8px;
                     cursor: pointer;
+
+                    &:hover {
+                        color: hsl(176, 68%, 64%);
+                        fill: hsl(176, 68%, 64%);
+                    }
                 }
             }
         }

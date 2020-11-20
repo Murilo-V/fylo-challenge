@@ -134,12 +134,18 @@ export const FeaturesStyle = styled.div`
                     justify-content: space-between;
                     width: 40%;
 
-                    div {
+                    &:hover {
+                        color:#fff;
+                        border-bottom: 1px solid #fff;
+
+                        img {
+                            filter: grayscale(100%);
+                        }
+                    }
+
+                    img {
                         width: 20px;
                         height: 20px;
-                        background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-challenge/7a86a591f6aa39a40c9e610338f35a074f89ad1f/src/assets/icon-arrow.svg');
-                        background-position:center;
-                        background-repeat: no-repeat;
                     }
                 }
             }
@@ -175,32 +181,5 @@ export const GetStartedDiv = styled.div`
 
         p {
             font-size: 12pt;
-        }
-`;
-
-export const GetStartedForm = styled.div`
-            background: hsl(216, 53%, 9%);
-            z-index: 0;        
-        form {
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            box-shadow: 0 20px 20px #080808;
-            background: hsl(219, 30%, 18%);
-            width: 60%;
-            margin: 0 auto 0 auto;
-            padding: 30px 50px 30px 50px;
-        }
-
-        input {
-            border-radius: 20px;
-            padding: 12px;
-            width: 60%;
-            color: hsl(219, 30%, 18%);
-            font-weight: bold;
-        }
-
-        button {
-            width: 37%;
-            margin-left: 3%;
         }
 `;

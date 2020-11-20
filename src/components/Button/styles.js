@@ -12,4 +12,10 @@ export const Container = styled.button `
         transition: 400ms;
         transition-property: background-image;
         background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        border: none;
+        outline:none;
+
+        &:hover {
+                background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+        }
 `;
