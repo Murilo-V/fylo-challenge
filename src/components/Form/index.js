@@ -10,7 +10,7 @@ const Form = () => {
     const invalidEmail = document.querySelector('#invalidEmail');
 
     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
-      alert('Email subscribed, thanks for submitting')
+      alert('Email subscribed, thanks for sending')
       invalidEmail.style.display = 'none';
 
     } else {
