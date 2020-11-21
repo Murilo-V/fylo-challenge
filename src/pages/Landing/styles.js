@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const IntroStyle = styled.div `
 @media (max-width: 600px) {
+    padding: 0 20px 0 20px;
+    background-image: url('https://raw.githubusercontent.com/Murilo-V/fylo-challenge/9b9df386f194fb02dee441c39e5c86c97a41fd15/src/assets/bg-curvy-mobile.svg');
+
         img {
-                width: 300px;
+                width: 340px;
             }
 
         h1, p {
@@ -11,15 +14,15 @@ export const IntroStyle = styled.div `
         }
         
         h1 {
-                font-size: 18pt !important;
+                font-size: 20pt !important;
             }
 
         p {
-            font-size: 11pt !important;
+            font-size:10pt !important;
         }
 
         button {
-            margin-bottom: 20px !important;
+            margin-bottom: 120px !important;
         }
 }
 
@@ -69,6 +72,41 @@ export const IntroStyle = styled.div `
 `;
 
 export const FeaturesStyle = styled.div`
+@media (max-width: 600px) {
+    .access-security, .real-time-store {
+        flex-direction: column;
+        padding-bottom: 0 !important;
+
+        div {
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+                font-size: 16pt !important;
+        }
+
+        p {
+                font-size: 10pt !important;
+        }
+    }
+
+    .stay-productive {
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+
+        img {
+                width: 100% !important;
+        }
+
+        a {
+            width: 50% !important;
+            img {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+    }
+ }
 
         background-color: hsl(218, 28%, 13%);
 
@@ -153,6 +191,9 @@ export const FeaturesStyle = styled.div`
 `;
 
 export const Comments = styled.div`
+@media (max-width: 600px) {
+    flex-direction: column;
+}
         padding-top: 120px;
         background-color: hsl(218, 28%, 13%);
         display: flex;
@@ -160,11 +201,16 @@ export const Comments = styled.div`
         align-items: center;
         background-image: url('https://github.com/Murilo-V/fylo-challenge/blob/main/src/assets/bg-quotes.png?raw=true');
         background-repeat: no-repeat;
-        background-position-x: 8vw;
-        background-position-y: 15vh;
+        background-position-x: 6vw;
+        background-position-y: 12vh;
 `;
 
 export const GetStartedDiv = styled.div`
+@media (max-width: 600px) {
+    margin-top: 60px;
+    width: 90%;
+    padding: 30px 20px 0 20px;
+}
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding: 30px 50px 0 50px;
@@ -172,7 +218,6 @@ export const GetStartedDiv = styled.div`
         width: 60%;
         margin: 150px auto 0 auto;
         text-align: center;
-        box-shadow: 0 12px 14px #080808;
 
         h4 {
             font-size: 20pt;

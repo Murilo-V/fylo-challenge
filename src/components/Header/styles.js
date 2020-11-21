@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.header `
     @media (max-width: 600px) {
         header {
-            padding: 10px !important;
+            padding: 30px !important;
 
             img {
-                width: 70px;
+                width: 90px;
             }
 
             li {
-                font-size: 12px;    
+                font-size: 12pt;    
             }
         }
     }

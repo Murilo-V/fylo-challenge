@@ -1,13 +1,33 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+@media (max-width: 600px) {
+    form {
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px 30px 20px !important;
+
+        input,button {
+            width: 90% !important;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-left: 0 !important;
+        }
+    }
+}
+
      background: hsl(216, 53%, 9%);
             z-index: 0;   
                  
         form {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            box-shadow: 0 20px 20px #080808;
             background: hsl(219, 30%, 18%);
             width: 60%;
             margin: 0 auto 0 auto;

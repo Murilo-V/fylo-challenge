@@ -1,6 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
+@media (max-width: 600px) {
+    padding: 80px 20px 40px 20px;
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+
+        .footer-nav {
+            flex-direction: column;
+
+            ul {
+                margin-top: 32px;
+            }
+        }
+
+        .social-media {
+            margin-top: 60px;
+        }
+    }
+}
     background: hsl(216, 53%, 9%);
     z-index: -1;
     position: absolute;
